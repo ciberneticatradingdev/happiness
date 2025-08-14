@@ -1,11 +1,11 @@
 // Money Buys Happiness - Memecoin Configuration
 
 // Contract Address (will be updated when deployed)
-export const CA = "CA_WILL_UPDATE_SOON";
+export const CA = "7eLYpTnWPbsVU6dbcAAzuvU5GD6efS6e6vPG6VjUpump";
 
 // Social Media Links
-export const TWITTER_URL = "https://x.com/MoneyBuysHappy";
-export const TELEGRAM_URL = "https://t.me/MoneyBuysHappiness";
+export const TWITTER_URL = "https://x.com/i/communities/1956051990217195962";
+export const TELEGRAM_URL = "https://t.me/";
 
 // Trading Links
 export const BUY_URL = `https://pump.fun/coin/${CA}`;
