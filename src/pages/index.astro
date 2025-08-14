@@ -13,12 +13,13 @@ import { CA, BUY_URL, TWITTER_URL, TELEGRAM_URL, DEXSCREENER_URL } from "../util
 >
   <!-- seccion 1 -->
 
-  <div class="min-h-screen bg-[#f7eb1b] flex flex-col items-center py-10">
+  <div class="min-h-screen bg-[#44b84b] flex flex-col items-center py-10">
     <h1 class="text-white text-4xl font-bold">
       it is what it is
     </h1>
 
-    <video src="/videohappy.mp4" autoplay loop muted playsinline class="w-96 h-96 mt-10"></video>
+    <!-- <video src="/videohappy.mp4" autoplay loop muted playsinline class="w-96 h-96 mt-10"></video> -->
+    <img src="/mbh.jpeg" alt="logo" class="h-96 mt-10">
 
     <h1 class="text-white text-center mt-8 text-6xl font-bold">
       money buys happiness
@@ -38,6 +39,55 @@ import { CA, BUY_URL, TWITTER_URL, TELEGRAM_URL, DEXSCREENER_URL } from "../util
       <a href={DEXSCREENER_URL} target="_blank" class="hover:scale-125 transition-transform">
         <img src="/social/dex-icon.svg" alt="dexscreener icon" class="w-8 h-8">
       </a>
+    </div>
+
+    <!-- Carrusel infinito de imágenes -->
+    <div class="w-full mt-16 overflow-hidden">
+      <div class="carousel-container flex animate-scroll">
+        <!-- Primera serie de imágenes -->
+        <div class="flex gap-4 min-w-max">
+          <img src="/gallery/1.jpg" alt="Gallery image 1" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/2.avif" alt="Gallery image 2" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/3.webp" alt="Gallery image 3" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/4.webp" alt="Gallery image 4" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/5.webp" alt="Gallery image 5" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/6.jpg" alt="Gallery image 6" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/7.jpg" alt="Gallery image 7" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/8.webp" alt="Gallery image 8" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/9.jpg" alt="Gallery image 9" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/10.jpg" alt="Gallery image 10" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/11.jpg" alt="Gallery image 11" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/12.avif" alt="Gallery image 12" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/13.jpg" alt="Gallery image 13" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+        </div>
+        <!-- Segunda serie de imágenes (duplicada para efecto infinito) -->
+        <div class="flex gap-4 min-w-max">
+          <img src="/gallery/1.jpg" alt="Gallery image 1" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/2.avif" alt="Gallery image 2" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/3.webp" alt="Gallery image 3" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/4.webp" alt="Gallery image 4" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/5.webp" alt="Gallery image 5" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/6.jpg" alt="Gallery image 6" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/7.jpg" alt="Gallery image 7" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/8.webp" alt="Gallery image 8" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/9.jpg" alt="Gallery image 9" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/10.jpg" alt="Gallery image 10" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/11.jpg" alt="Gallery image 11" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/12.avif" alt="Gallery image 12" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+          <img src="/gallery/13.jpg" alt="Gallery image 13" class="h-32 w-32 object-cover rounded-lg hover:scale-110 transition-transform cursor-pointer gallery-img">
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de facts -->
+    <div class="w-full max-w-2xl mx-auto mt-20 px-4 flex flex-col items-center text-center">
+      <h2 class="text-white text-3xl md:text-4xl font-bold mb-4">
+        backed by science
+      </h2>
+      <p class="text-white text-lg md:text-xl mb-8 opacity-90">
+        it's just facts
+      </p>
+      <img src="/facts3.png" alt="Scientific facts about money and happiness" class="w-full max-w-lg rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
     </div>
 
   </div>
@@ -104,6 +154,33 @@ import { CA, BUY_URL, TWITTER_URL, TELEGRAM_URL, DEXSCREENER_URL } from "../util
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 2px 10px rgba(255,255,255,0.2);
+  }
+
+  /* Carrusel infinito */
+  .carousel-container {
+    animation: scroll 30s linear infinite;
+  }
+
+  .carousel-container:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .gallery-img {
+    transition: all 0.3s ease;
+  }
+
+  .gallery-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
   }
   
   .byrd-medium-btn {
@@ -187,6 +264,20 @@ import { CA, BUY_URL, TWITTER_URL, TELEGRAM_URL, DEXSCREENER_URL } from "../util
      memeItems.forEach(item => {
        item.addEventListener('click', () => {
          const imageUrl = item.getAttribute('data-image');
+         if (modalImage && imageUrl) {
+           modalImage.src = imageUrl;
+         }
+         modal?.classList.remove('hidden');
+         modal?.classList.add('flex');
+         document.body.style.overflow = 'hidden';
+       });
+     });
+     
+     // Open modal when clicking on gallery images
+     const galleryImages = document.querySelectorAll('.gallery-img');
+     galleryImages.forEach(img => {
+       img.addEventListener('click', () => {
+         const imageUrl = img.getAttribute('src');
          if (modalImage && imageUrl) {
            modalImage.src = imageUrl;
          }
